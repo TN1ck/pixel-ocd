@@ -236,6 +236,17 @@ class PixelOCD extends React.Component<PixelOCDProps, {
             width: this.state.position.width,
             zIndex: 3,
           }}
+        />
+        <div
+          style={{
+            position: 'absolute',
+            left: this.state.position.x,
+            top: this.state.position.y,
+            transform: 'translate(-50%, -50%)',
+            height: 32,
+            width: 32,
+            zIndex: 3,
+          }}
           onClick={this.startAnimation}
         />
         {tiles.map((tileRow, i) => {
